@@ -1,2 +1,8 @@
-# note-llm-rag-agents
-Personal notes and technical references on LLMs, Retrieval-Augmented Generation (RAG), and AI Agents. Includes theory, examples, and evaluation practices for building modern AI systems.
+# Tabel of contents
+- LLM
+- RAG
+- AI AGENT
+- AGENTIC AI
+
+
+# LLM
