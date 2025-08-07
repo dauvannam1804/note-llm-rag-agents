@@ -54,5 +54,22 @@ Some parts of the diagram may be inaccurate.([Bytebytego](https://blog.bytebyteg
   where `α` is a scaling factor (e.g. 16).
 - ✅ `W` stays untouched; only `A` and `B` are learned.
 
+## Function Calling
+Function calling allows the model to:
+- Know when and how to use tools (functions/APIs) during a conversation.
+- Output structured JSON instead of plain text, making it easier for your code to handle responses.
+- Let the LLM decide when to call a function, what function to call, and what arguments to pass.
+
+<a href="images/FunctionCalling.png">
+  <img src="images/FunctionCalling.png" width="40%">
+</a>
+
+[Function calling - OpenAI API](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)
+
+
+
+
+
+
 
 
