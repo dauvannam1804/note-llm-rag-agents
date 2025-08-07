@@ -32,15 +32,27 @@ Some parts of the diagram may be inaccurate.([Bytebytego](https://blog.bytebyteg
 | **Multimodal**       | Paired text + image/audio/video datasets | Pretrain on multiple modalities; supervised fine-tuning on aligned tasks ([Wikipedia](https://en.wikipedia.org/wiki/Gemini_%28language_model%29), [BentoML](https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models)) | GPT‑4, Phi‑4‑multimodal‑instruct ([Phi-4](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)) |
 | **Domain‑specific**  | Specialized data (e.g. medical texts, legal corpora) | Fine-tuning base or instruct model on curated domain dataset | Med‑PaLM (Google), Legal‑LLMs |
 
-## 🧩 [LoRA](https://arxiv.org/abs/2106.09685) (Low-Rank Adaptation)
+## [LoRA](https://arxiv.org/abs/2106.09685) (Low-Rank Adaptation)
 
-
+<a href="images/LoRA.png">
+  <img src="images/LoRA.png" width="40%">
+</a>
 
 - Instead of updating all model weights (like full fine-tuning), **LoRA freezes the base model** and trains **small adapter matrices**.
 - These adapters are **low-rank matrices** added to key weights (e.g., W → W + A×B), requiring **far fewer parameters**.
 - LoRA is **faster, cheaper, and uses less memory** than full fine-tuning, and the base model stays reusable.
-- 📊 Example: Instead of training 262,144 params (512×512), LoRA only trains 4,096 (512×4 + 4×512).
 - 🧠 Use case: Efficiently adapt large models to new tasks/domains with small memory/storage footprint.
+
+### Tiny Numerical Example (LoRA)
+- Suppose your model has a weight matrix **W** of shape `512 × 512` → **262,144** parameters.
+- With **LoRA**, you freeze `W` and add two small matrices:
+  - **A**: `512 × 4`
+  - **B**: `4 × 512`
+- Trainable parameters: `4 × 512 + 512 × 4 = 4,096` → **64× fewer!**
+- The modified weight:  
+  **W′ = W + α × (A × B)**  
+  where `α` is a scaling factor (e.g. 16).
+- ✅ `W` stays untouched; only `A` and `B` are learned.
 
 
 
