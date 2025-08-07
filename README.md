@@ -12,8 +12,8 @@
 - Powers tasks like Q&A, summarization, translation.  
 👉 An AI model trained on massive text data to understand and generate human-like language
 
-<a href="images/ChatgptPipeline.png" target="_blank">
-  <img src="images/ChatgptPipeline.png" alt="model" width="40%">
+<a href="images/ChatgptPipeline.png">
+  <img src="images/ChatgptPipeline.png" width="40%">
 </a>
 
 Some parts of the diagram may be inaccurate.([Bytebytego](https://blog.bytebytego.com/p/ep-44-how-does-chatgpt-work?utm_source=publication-search))
@@ -31,6 +31,16 @@ Some parts of the diagram may be inaccurate.([Bytebytego](https://blog.bytebyteg
 | **Reasoning / Thinking** | Complex question–answer, chain-of-thought examples | Prompting with chain-of-thought or hybrid training plus external verification ([arXiv](https://arxiv.org/abs/2201.11903), [Wired](https://www.wired.com/story/anthropic-world-first-hybrid-reasoning-ai-model)) | Claude 3.7 hybrid reasoning |
 | **Multimodal**       | Paired text + image/audio/video datasets | Pretrain on multiple modalities; supervised fine-tuning on aligned tasks ([Wikipedia](https://en.wikipedia.org/wiki/Gemini_%28language_model%29), [BentoML](https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models)) | GPT‑4, Phi‑4‑multimodal‑instruct ([Phi-4](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)) |
 | **Domain‑specific**  | Specialized data (e.g. medical texts, legal corpora) | Fine-tuning base or instruct model on curated domain dataset | Med‑PaLM (Google), Legal‑LLMs |
+
+## 🧩 [LoRA](https://arxiv.org/abs/2106.09685) (Low-Rank Adaptation)
+
+
+
+- Instead of updating all model weights (like full fine-tuning), **LoRA freezes the base model** and trains **small adapter matrices**.
+- These adapters are **low-rank matrices** added to key weights (e.g., W → W + A×B), requiring **far fewer parameters**.
+- LoRA is **faster, cheaper, and uses less memory** than full fine-tuning, and the base model stays reusable.
+- 📊 Example: Instead of training 262,144 params (512×512), LoRA only trains 4,096 (512×4 + 4×512).
+- 🧠 Use case: Efficiently adapt large models to new tasks/domains with small memory/storage footprint.
 
 
 
