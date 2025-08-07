@@ -66,6 +66,12 @@ Function calling allows the model to:
 
 [Function calling - OpenAI API](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)
 
+## Eval LLM Response
+
+
+
+
+
 
 
 
