@@ -74,6 +74,14 @@ Function calling allows the model to:
 # AI Agent vs Agentic AI
 
 - There is **no universally agreed definition** separating *AI Agent* and *Agentic AI* — the distinction often depends on context or how companies choose to market the concept.
+([goole cloude](https://cloud.google.com/discover/what-are-ai-agents?hl=vi#what-is-the-difference-between-ai-agents-ai-assistants-and-bots),
+[ibm](https://www.ibm.com/think/topics/agentic-ai), [geeksforgeeks](https://www.geeksforgeeks.org/artificial-intelligence/agentic-ai-vs-ai-agents/), ...)
+
+<a href="images/agentic_workflow.png">
+  <img src="images/agentic_workflow.png" width="60%">
+</a>
+
+[source: weaviate](https://weaviate.io/blog/what-are-agentic-workflows#what-are-agentic-workflows)
 
 ### Basic Workflow of an AI Agent
 1. **Receive Goal** – Accepts a target or objective from a user or system.
