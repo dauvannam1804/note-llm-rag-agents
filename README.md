@@ -93,18 +93,34 @@ Function calling allows the model to:
 
 ## Some Agentic workflow patterns
 ### Planning
+
+<a href="images/planning_pattern.jpg">
+  <img src="images/planning_pattern.jpg" width="60%">
+</a>
+
 **Why:** Breaks complex tasks into smaller steps, improving reasoning and reducing errors.  
 **When:** Use for multi-step problem-solving where the solution path is unclear.
 
 ---
 
 ### Tool Use
+
+<a href="images/tool_use_pattern.jpg">
+  <img src="images/tool_use_pattern.jpg" width="60%">
+</a>
+
 **Why:** Gives the agent real-time, external capabilities beyond its training data.  
 **When:** Use when tasks need up-to-date information or external system interaction.
 
 ---
 
 ### Reflection
+
+<a href="images/reflection_pattern.jpg">
+  <img src="images/reflection_pattern.jpg" width="60%">
+</a>
+
+
 **Why:** Enables self-evaluation and iterative improvement without human feedback.  
 **When:** Use when tasks benefit from multiple refinement cycles for higher accuracy.
 
