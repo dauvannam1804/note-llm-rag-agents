@@ -127,6 +127,14 @@ Function calling allows the model to:
 
 
 
+# To-Do List
+
+- [ ] Research different **RAG architectures** and their applications.  
+- [ ] Study **methods for evaluating LLM-generated content**.  
+- [ ] Explore **AI Agent evaluation** techniques.  
+- [ ] Learn about **chatbot systems** and their design principles.  
+- [ ] Investigate **Agentic RAG** and its use cases.
+- [ ] Adjust content order
 
 
 
