@@ -71,6 +71,20 @@ Function calling allows the model to:
 
 # RAG
 
+# AI Agent vs Agentic AI
+
+- There is **no universally agreed definition** separating *AI Agent* and *Agentic AI* — the distinction often depends on context or how companies choose to market the concept.
+
+### Basic Workflow of an AI Agent
+1. **Receive Goal** – Accepts a target or objective from a user or system.
+2. **Perceive Environment** – Collects relevant data from inputs, APIs, or sensors.
+3. **Plan** – Breaks the goal into steps and decides the sequence of actions.
+4. **Act** – Executes actions using tools, APIs, or other systems.
+5. **Observe & Evaluate** – Monitors outcomes and gathers feedback.
+6. **Adjust** – Modifies plans or actions to improve results or respond to changes.
+
+
+
 
 
 
