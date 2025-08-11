@@ -83,7 +83,7 @@ Function calling allows the model to:
 
 [source: weaviate](https://weaviate.io/blog/what-are-agentic-workflows#what-are-agentic-workflows)
 
-### Basic Workflow of an AI Agent
+## Basic Workflow of an AI Agent
 1. **Receive Goal** – Accepts a target or objective from a user or system.
 2. **Perceive Environment** – Collects relevant data from inputs, APIs, or sensors.
 3. **Plan** – Breaks the goal into steps and decides the sequence of actions.
