@@ -71,7 +71,25 @@ Function calling allows the model to:
 
 # MCP
 - [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) is an open protocol that standardizes how applications provide context to large language models (LLMs).
-- core problem MCP solves: the M×N integration issue
+
+<a href="images/mcp.png">
+  <img src="images/mcp.png" width="40%">
+</a>
+ 
+- Core problem MCP solves: the M×N integration issue
+
+<a href="images/mxn_mcp.svg">
+  <img src="images/mxn_mcp.svg" width="60%">
+</a>
+
+- **MCP Architecture**
+  - MCP Host: The AI application that coordinates and manages one or multiple MCP clients
+  - MCP Client: A component that maintains a connection to an MCP server and obtains context from an MCP server for the MCP host to use
+  - MCP Server: A program that provides context to MCP clients
+
+<a href="images/mcp2.svg">
+  <img src="images/mcp2.svg" width="60%">
+</a>
 
 
 # RAG
