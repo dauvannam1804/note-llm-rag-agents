@@ -21,7 +21,7 @@ Some parts of the diagram may be inaccurate.([Bytebytego](https://blog.bytebyteg
 ⚠️ LLMs can’t access real-time info, remember past chats, or reason deeply.  
 ✅ Solved with RAG, memory modules, function calling, and agents.
 
-## Type of llm
+## Type of LLMs
 | Model Type          | Data Examples                          | How It’s Trained (Simple)                                     | Example Model & Link |
 |---------------------|-----------------------------------------|----------------------------------------------------------------|----------------------|
 | **Base / Foundation** | Web text, books, code (e.g. CommonCrawl, GitHub, Wikipedia) | Self-supervised learning: next-token prediction on massive unlabeled data ([Medium](https://medium.com/%40yashwanths_29644/llm-finetuning-series-05-llm-architectures-base-instruct-and-chat-models-a6219c39c362), [Wikipedia](https://en.wikipedia.org/wiki/Llama_%28language_model%29)) | GPT‑3 before fine-tuning (OpenAI) |
@@ -68,6 +68,11 @@ Function calling allows the model to:
 
 ## Prompt techniques
 [https://github.com/BachNgoH/PromptingTechniques](https://github.com/BachNgoH/PromptingTechniques)
+
+# MCP
+- [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) is an open protocol that standardizes how applications provide context to large language models (LLMs).
+- core problem MCP solves: the M×N integration issue
+
 
 # RAG
 
