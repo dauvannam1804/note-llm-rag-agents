@@ -91,6 +91,24 @@ Function calling allows the model to:
 5. **Observe & Evaluate** – Monitors outcomes and gathers feedback.
 6. **Adjust** – Modifies plans or actions to improve results or respond to changes.
 
+## Some Agentic workflow patterns
+### Planning
+**Why:** Breaks complex tasks into smaller steps, improving reasoning and reducing errors.  
+**When:** Use for multi-step problem-solving where the solution path is unclear.
+
+---
+
+### Tool Use
+**Why:** Gives the agent real-time, external capabilities beyond its training data.  
+**When:** Use when tasks need up-to-date information or external system interaction.
+
+---
+
+### Reflection
+**Why:** Enables self-evaluation and iterative improvement without human feedback.  
+**When:** Use when tasks benefit from multiple refinement cycles for higher accuracy.
+
+
 
 
 
