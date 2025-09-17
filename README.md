@@ -69,6 +69,8 @@ Function calling allows the model to:
 ## Prompt techniques
 [https://github.com/BachNgoH/PromptingTechniques](https://github.com/BachNgoH/PromptingTechniques)
 
+[https://github.com/dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+
 # MCP
 - [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) is an open protocol that standardizes how applications provide context to large language models (LLMs).
 
